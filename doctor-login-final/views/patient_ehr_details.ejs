@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Patient EHR Data</title>
+  <style>
+    /* Add your CSS styles here */
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    h1 {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    ul li {
+      margin-bottom: 10px;
+    }
+
+    p {
+      margin-bottom: 5px;
+    }
+
+    .emergency-contact {
+      margin-top: 30px;
+    }
+
+    .appointment {
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Patient EHR Data</h1>
+  <p>First Name: <%= patient.firstName %></p>
+  <p>Last Name: <%= patient.lastName %></p>
+  <p>Gender: <%= patient.gender %></p>
+  <p>Date of Birth: <%= patient.dateOfBirth %></p>
+  <p>Email: <%= patient.email %></p>
+  <p>Phone Number: <%= patient.phoneNumber %></p>
+  <% if (patient.address) { %>
+    <p>Address: <%= patient.address %></p>
+  <% } %>
+  <p>Medical History: <%= patient.medicalHistory %></p>
+  <ul>
+    <% patient.medications.forEach(function(medication) { %>
+      <li><%= medication.name %>: <%= medication.dosage %></li>
+    <% }); %>
+  </ul>
+  <ul>
+    <p>Allergies:</p>
+    <% patient.allergies.forEach(function(allergy) { %>
+      <li><%= allergy %></li>
+    <% }); %>
+  </ul>
+  <p>Blood Type: <%= patient.bloodType %></p>
+  <p>Emergency Contact:</p>
+  <p>Name: <%= patient.emergencyContact.name %></p>
+  <p>Phone Number: <%= patient.emergencyContact.phoneNumber %></p>
+  <p>Scheduled Appointments: </p>
+  <p>Appointment-1: <%= patient.appointmentScheduled.appointment1 %></p>
+  <p>Appointment-2: <%= patient.appointmentScheduled.appointment2 %></p>
+  <p>Appointment-3: <%= patient.appointmentScheduled.appointment3 %></p>
+</body>
+</html>

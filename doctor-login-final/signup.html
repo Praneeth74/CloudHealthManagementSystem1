@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Sign up</title>
+  <style>
+    /* Center the form */
+    form {
+      width: 50%;
+      margin: 0 auto;
+    }
+    
+    /* Style the labels */
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+    
+    /* Style the input fields */
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      margin-bottom: 20px;
+      font-size: 16px;
+    }
+    
+    /* Style the submit button */
+    input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    
+    /* Style the heading */
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Sign up</h1>
+  <form action="/signup" method="POST">
+    <label for="first_name">First name:</label>
+    <input type="text" id="first_name" name="first_name" required>
+
+    <label for="last_name">Last name:</label>
+    <input type="text" id="last_name" name="last_name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>

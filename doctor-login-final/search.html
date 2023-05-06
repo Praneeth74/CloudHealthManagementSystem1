@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Doctor Login</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+    }
+
+    form {
+      background-color: #ffffff;
+      padding: 20px;
+      max-width: 500px;
+      margin: 0 auto;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+    input[type="email"] {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 3px;
+      margin-bottom: 20px;
+      font-size: 16px;
+    }
+
+    button[type="submit"] {
+      display: block;
+      width: 100%;
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 3px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button[type="submit"]:hover {
+      background-color: #3e8e41;
+    }
+  </style>
+</head>
+<body>
+  <form action="/patient-search" method="post">
+    <input type="email" id="email" name="email1" placeholder="Enter patient's ID to search" required>
+    <button type="submit" name="button1" value="clicked">Search</button>
+  </form>
+  <br>
+  <br>
+  <form action="/patient-search" method="post">
+    <!-- signup form fields -->
+    <button type="submit" name="button2" value="clicked">Add New Patient</button>
+  </form>
+  <br>
+  <br>
+  <form action="/patient-search" method="post">
+    <!-- signup form fields -->
+    <input type="email" id="email" name="email" placeholder="Enter patient's ID to update" required>
+    <button type="submit" name="button3" value="clicked">Edit Patient EHR Detatils</button>
+  </form>
+
+  
+</body>
+</html>

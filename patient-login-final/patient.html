@@ -1,0 +1,39 @@
+
+          '
+          <!DOCTYPE html>
+          <html>
+          <head>
+            <title>Patient EHR Data</title>
+            <style>
+              /* add your CSS styles here */
+            </style>
+          </head>
+          <body>
+            <h1>Patient EHR Data</h1>
+            <p>First Name: ${y.firstName}</p>
+            <p>Last Name: ${y.lastName}</p>
+            <p>Gender: ${y.gender}</p>
+            <p>Date of Birth: ${y.dateOfBirth}</p>
+            <p>Email: ${y.email}</p>
+            <p>Phone Number: ${y.phoneNumber}</p>
+            ${y.address ? `<p>Address: ${y.address}</p>` : ''}
+            <p>Medical History: ${y.medicalHistory}</p>
+            <ul>
+              ${y.medications.map(medication => `<li>${medication.name}: ${medication.dosage}</li>`).join('')}
+            </ul>
+            <ul>
+            <p>Allergies</p>
+              ${y.allergies.map(allergy => `<li>${allergy}</li>`).join('')}
+            </ul>
+            <p>Blood Type: ${y.bloodType}</p>
+            <h2>Emergency Contact:</h2>
+            <p>Name: ${y.emergencyContact.name}</p>
+            <p>Phone Number: ${y.emergencyContact.phoneNumber}</p>
+            <p>Relationship: ${y.emergencyContact.relationship}</p>
+            <h2>Appointments:</h2>
+            <p>Appointment-1: ${y.appointmentScheduled.appointment1}</p>
+            <p>Appointment-2: ${y.appointmentScheduled.appointment1}</p>
+            <p>R: ${y.appointmentScheduled.appointment1}</p>
+          </body>
+          </html>
+        '
