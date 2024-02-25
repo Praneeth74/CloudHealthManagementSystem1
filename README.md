@@ -17,3 +17,4 @@ The EHRs and appointment details are stored in the mongoDB database and can be u
 ![image](https://github.com/Praneeth74/CloudHealthManagementSystem1/assets/78482609/d4e6a015-7f15-4f7a-90df-f6b826a1e8f9)
 
 
+![image](https://github.com/Praneeth74/CloudHealthManagementSystem1/assets/78482609/a6eecab3-686d-44d2-a77f-c9dc2e62843b)
